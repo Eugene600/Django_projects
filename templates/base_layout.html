@@ -5,7 +5,8 @@
         <link rel="stylesheet" href="{%static 'style.css'%}">
     </head>
     <body>
-        <div class = "wrapper" > 
+        <div class = "wrapper" >      
+            {% comment %} <h1><a href="{% url 'lists' %}">Wachira Enterprise</a></h1> {% endcomment %}
             {% block content %}
             {% endblock content %}
         </div>
