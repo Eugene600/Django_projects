@@ -1,6 +1,8 @@
+{% load static  %}
 <html>
     <head>
         <title>Wachira Website</title>
+        <link rel="stylesheet" href="{%static 'style.css'%}">
     </head>
     <body>
         <h1>Article List</h1>
@@ -8,7 +10,7 @@
             {% for articles in article%}
             <div class="articles">
                 <h2><a href="#">{{articles.title}}</a></h2>
-                <p>{{articles.body}}</p>
+                <p>{{articles.snippet}}</p>
                 <p>{{articles.date_published}}</p>
             
             </div>
