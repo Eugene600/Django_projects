@@ -3,7 +3,16 @@
         <title>Wachira Website</title>
     </head>
     <body>
-        <h1>Articles Section</html>
-        <p>This is our articles section</p>   
+        <h1>Article List</h1>
+        <div class = "article" > 
+            {% for articles in article%}
+            <div class="articles">
+                <h2><a href="#">{{articles.title}}</a></h2>
+                <p>{{articles.body}}</p>
+                <p>{{articles.date_published}}</p>
+            
+            </div>
+            {% endfor %}
+        </div>
     </body>
 </html>  
