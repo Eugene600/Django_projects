@@ -1,20 +1,13 @@
-{% load static  %}
-<html>
-    <head>
-        <title>Wachira Website</title>
-        <link rel="stylesheet" href="{%static 'style.css'%}">
-    </head>
-    <body>
-        <h1>Article List</h1>
-        <div class = "article" > 
-            {% for articles in article%}
-            <div class="articles">
-                <h2><a href="#">{{articles.title}}</a></h2>
-                <p>{{articles.snippet}}</p>
-                <p>{{articles.date_published}}</p>
-            
-            </div>
-            {% endfor %}
+{% extends 'base_layout.html' %}
+{%block content%}
+    <h1>Article List</h1>
+    <div class = "article" > 
+        {% for articles in article%}
+        <div class="articles">
+            <h2><a href="#">{{articles.title}}</a></h2>
+            <p>{{articles.snippet}}</p>
+            <p>{{articles.date_published}}</p>           
         </div>
-    </body>
-</html>  
+        {% endfor %}
+    </div>
+{%endblock%}    
