@@ -18,3 +18,8 @@ a, a:hover, a:visited{
     color: #fff;
     text-decoration: none;
 }
+
+wrapper.img{
+    height: 30px !important;
+    width: 30px !important;
+}
