@@ -4,7 +4,7 @@
     <div class = "article" > 
         {% for articles in article%}
         <div class="articles">
-            <h2><a href="#">{{articles.title}}</a></h2>
+            <h2><a href="{% url 'article_detail' articles.slug%}">{{articles.title}}</a></h2>
             <p>{{articles.snippet}}</p>
             <p>{{articles.date_published}}</p>           
         </div>
