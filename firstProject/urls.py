@@ -27,8 +27,8 @@ urlpatterns = [
     # path('firstApp/', include('firstApp.urls')),
     path('home/',views.home),
     path('about/',views.about),
-    path('app1/', include('app1.urls')),
-    path('accounts/', include('accounts.urls')),
+    path('app1/', include('app1.urls'), name= "app1"),
+    path('accounts/', include('accounts.urls'),name = "accounts"),
     path("__debug__/", include("debug_toolbar.urls")),
 ]
 

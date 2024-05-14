@@ -5,7 +5,7 @@
     <form class = "site-form",method="post", action="/accounts/signup" >
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="SignUp">Submit</button>
+        <button type="submit">SignUp</button>
     </form>
 
 {%endblock%}
