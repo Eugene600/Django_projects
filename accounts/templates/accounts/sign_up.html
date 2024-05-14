@@ -2,5 +2,10 @@
 
 {%block content%}
     <h1>SignUp</h1>
+    <form class = "site-form",method="post", action="/accounts/signup" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="SignUp">Submit</button>
+    </form>
 
 {%endblock%}
