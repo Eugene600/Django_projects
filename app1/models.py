@@ -7,6 +7,7 @@ class Article(models.Model):
     body = models.TextField()
     date_published = models.DateField(auto_now_add=True)
     slug = models.SlugField(unique=True)  # Add a slug field
+    thumb = models.ImageField(default='default.jpg',blank=True)
 
     def save(self, *args, **kwargs):
         # Generate the slug from the title

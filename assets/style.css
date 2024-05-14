@@ -20,6 +20,11 @@ a, a:hover, a:visited{
 }
 
 wrapper.img{
-    height: 30px !important;
-    width: 30px !important;
+    height: 20px !important;
+    width: 20px !important;
 }
+
+/* article.img {
+    width: 100px !important;
+    height: 100px !important;
+} */
