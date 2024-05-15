@@ -6,7 +6,8 @@
     </head>
     <body>
         <div class = "wrapper" >      
-            <h1><a href="{% url 'list' %}"><img src="{%static 'wachira_hub.jpeg' %} " alt="Logo of Wachira Hub"></a></h1>
+            {% comment %} <h1><a href="{% url 'list' %}"><img src="{%static 'wachira_hub.jpeg' %} " alt="Logo of Wachira Hub"></a></h1> {% endcomment %}
+            <h1><a href="{% url 'app1:list' %}">Wachira Industries</a></h1>
             <br>
             {% block content %}
             {% endblock content %}

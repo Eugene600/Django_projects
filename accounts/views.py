@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.urls import reverse
 from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
@@ -10,7 +11,7 @@ def sign_up(request):
             form.save()
             #Log in user later
             print("Sign up successful")
-            return redirect('signup')
+            return redirect('app1:list')
         else:
             print("Failed Sign up")
             return render(request, 'accounts/sign_up.html',{'form': form}) 
