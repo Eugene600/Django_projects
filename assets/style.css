@@ -1,6 +1,6 @@
 body {
     background-color: #0f121f;
-    background-image: url('stars.jpg');
+    background-image: url('red-black-brush-stroke-banner-background-perfect-canva.jpg');
     background-repeat: no-repeat;
     color: #fff;
 }
@@ -19,9 +19,26 @@ a, a:hover, a:visited{
     text-decoration: none;
 }
 
-wrapper.img{
-    height: 20px !important;
-    width: 20px !important;
+
+
+.nav-bar {
+    background: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.heading {
+    font-size: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
 }
 
 /* article.img {
