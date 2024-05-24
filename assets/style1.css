@@ -1,0 +1,17 @@
+/*
+This CSS file handles the accounts page
+*/
+body {
+    background-color: #0f121f;
+    background-image: url('red-black-brush-stroke-banner-background-perfect-canva.jpg');
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.site-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}

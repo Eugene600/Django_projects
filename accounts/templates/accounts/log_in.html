@@ -1,11 +1,16 @@
-{% extends 'base_layout.html' %}
+{%load static%}
+<html>
+    <head>
+        <title>The Wachira Times</title>
+        <link rel="stylesheet" href="{%static 'style1.css'%}">
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form class="site-form" method="post" action={%url 'accounts:login'%}>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+    </body>
+</html>        
 
-{%block content%}
-    <h1>Login</h1>
-    <form class="site-form" method="post" action={%url 'accounts:login'%}>
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-    </form>
-
-{%endblock%}
